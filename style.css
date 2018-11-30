@@ -1,0 +1,95 @@
+/* Starting off using the mobile first approach */
+/* universal resets and font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: Gotham-Book;
+    font-size: 1em;
+}
+button {
+    cursor: pointer;
+}
+@media only screen and (min-width:320px) {
+   /* styling the login page */
+   /* main Login page*/
+   .login-wrapper {
+       background: cadetblue;
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+   }
+   .login-content-wrapper {
+       margin: auto;
+       width: 60%;
+       text-align: center;
+       padding-top: 11em;
+   }
+   .login-content-wrapper i {
+       font-size: 4em; 
+       display: block;
+       color: white;
+   }
+   .login-content-wrapper button {
+       border: solid white 1.5px;
+       background: none;
+       color: white;
+       letter-spacing: 2px;
+       font-size: .8em;
+       font-weight: 700;
+       padding: 5px 10px;
+       margin-top: 14em;
+   }
+   /* Login overlay */
+   .login-overlay {
+       position: absolute;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, .9);
+       transform: translateY(100%); 
+       transition: transform .3s ease-out;
+       
+   }
+   .login-overlay-content {
+       width: 70%;
+       margin:  10em auto;
+       text-align: center;
+   }
+   .login-overlay-content form input {
+       width: 80%;
+       font-size: 1em;
+       padding: 4px 3px;
+       margin: 1em 0;
+   }
+   .login-overlay-content form button {
+        border: solid white 1.5px;
+        background: none;
+        color: white;
+        letter-spacing: 2px;
+        font-size: .8em;
+        font-weight: 700;
+        padding: 5px 10px;
+        margin-top: 2em;
+   }
+   .login-overlay-content form span {
+       color: white;
+       font-size: 2em;
+       position: absolute;
+       top: 100px;
+       right: 68px;
+       cursor: pointer;
+   }
+   #incPassword {
+       color: red;
+       font-size: .8em;
+       margin-top: 2em;
+       text-transform: uppercase;
+       letter-spacing: 4px;
+   }
+}
+
+
