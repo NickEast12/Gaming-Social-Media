@@ -4,10 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6, p, li, a, span {
-    font-family: Gotham-Book;
+    font-family: poppins;
     font-size: 1em;
 }
 button {
@@ -16,11 +15,16 @@ button {
 @media only screen and (min-width:320px) {
    /* styling the login page */
    /* main Login page*/
+   #index-body {
+       position: relative;
+       overflow: hidden;
+   }
    .login-wrapper {
        background: cadetblue;
        width: 100%;
        height: 100%;
        overflow: hidden;
+       position: relative;
    }
    .login-content-wrapper {
        margin: auto;
@@ -46,12 +50,11 @@ button {
    /* Login overlay */
    .login-overlay {
        position: absolute;
-       top: 0;
+       top: 100%;
        width: 100%;
        height: 100%;
-       background: rgba(0, 0, 0, .9);
-       transform: translateY(100%); 
-       transition: transform .3s ease-out;
+       background: rgba(0, 0, 0, .9); 
+       transition: top .3s ease-out;
        
    }
    .login-overlay-content {
@@ -107,7 +110,7 @@ button {
    }
    .icons-wrapper i {
        font-size: 1.1em;
-       padding: 10px;
+       padding: 20px;
    }
    .homepage-body {
        background: rgba(0, 0, 0, .9);
@@ -116,17 +119,18 @@ button {
    .banner-content {
     background: rgba(0, 0, 0, .9);
     display: grid;
-    grid-template-columns: 25% 1fr;
-    padding: 1em 0 .5em 0;
+    grid-template-columns: 15% 70% 1fr;
+    padding: 1em 0 1em 0;
    }
    .banner-content  h1 {
        color: white;
-       font-weight: 500;
        font-size: .8em;
        padding: 5px 0 ;
        background: none;
        z-index: 0;
-       margin-left: 3em;
+       text-align: center;
+        
+       
    }
    .banner-content i {
        color: white;
@@ -174,10 +178,9 @@ button {
        padding-left: 3px;
        font-weight: 200;
    }
-   .profile-links {
-   }
+   
    .profile-links i {
-       font-size: 1.4em;
+       font-size: 1.2em;
        
    }
    .profile-links span {
@@ -186,7 +189,7 @@ button {
    }
    .profile-menu hr {
        margin-top: 1em;
-       width: 120%;
+       width: 106%;
        margin-left: -15px;
    }
    .aboutPara {
@@ -198,6 +201,16 @@ button {
        right: 30px;
        font-size: 30px;
    }
+   
+
+
+
+
+
+
+
+
+
 }
 
 

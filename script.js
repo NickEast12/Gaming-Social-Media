@@ -8,10 +8,14 @@ const incPassword = document.getElementById('incPassword');
 
 
 signInTrigger.addEventListener('click', () => {
-    overlay.style.transform = "translateY(0)";
+   // overlay.style.transform = "translateY(0)";
+   overlay.style.top = '0';
+
 })
 signInClose.addEventListener('click', () => {
-    overlay.style.transform = "translateY(100%)"; 
+   // overlay.style.transform = "translateY(100%)"; 
+   overlay.style.top = '100%';
+
 })
 
 
