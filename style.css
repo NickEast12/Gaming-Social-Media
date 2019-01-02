@@ -368,15 +368,13 @@ a:visited {
          width: 95%;
          margin: 0 auto;
      }
-     .games h1 {
-         color: white;
-         margin: .6em 0;
-     }
      #games-select {
          color: black;
-         margin-bottom: 1em;
+         margin: 1em 0;
          border: solid white 1px;
          width: 50%;
+         font-size: 1em;
+         padding-left: 3px;
      }
      .games hr {
          margin: .5em 0 1em 0;
