@@ -14,3 +14,7 @@ closeProfile.addEventListener('click', () => {
     testT.style.display = 'none';
     testM.style.position = 'inherit';
 })
+
+testT.addEventListener('click', () => {
+    profile.style.transform = "translateX(-100%)";
+})

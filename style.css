@@ -107,7 +107,7 @@ a:visited {
        height: 100%;
        position: absolute;
        background-color: rgba(0, 0, 0, .6);
-       z-index: 102;
+       z-index: 104;
        display: none;
     
        
@@ -120,7 +120,6 @@ a:visited {
        position: fixed;
        bottom: 0;
        width: 100%;
-       border-top: solid 1px white;
        z-index: 100;
        position: fixed
    }
@@ -382,6 +381,7 @@ a:visited {
      /* Games Page Wrapper */
      .games-wrapper {
          width: 100%;
+         margin-bottom: 4em;
      }
      .games-wrapper ul {
          display: grid;
@@ -409,6 +409,71 @@ a:visited {
          
      }
 
+     /* Notifiction page */
+     .notification-select {
+         color: white;
+         background: black;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         width: 100%;
+         text-align: center;
+         position: fixed;
+         z-index: 100;
+       
+     }
+     .notification-select-all {
+        border-bottom: solid white 1px;
+     }
+     .notification-select-all h4, .notification-select-mentions h4 {
+         font-weight: 400;
+         font-size: .96em;
+         letter-spacing: 1.2px;
+         padding-bottom: 10px;
+     }
+     /* All notifications */
+     .notification-main {
+         margin-top: 3em;
+         margin-bottom: 4.5em;
+     }
+     .notifications-all-items {
+         width: 100%;
+         margin: 1em auto;
+         padding: 0 9%;
+         color: white;
+         font-size: .9em;
+         position: relative;
+         border-bottom: solid rgba(255, 255, 255, 1) .1px;
+         padding-bottom: 5px;
+         
+     }
+     .notifications-all-items h3 {
+         font-weight: 300;
+     }
+     .notifications-all-items p {
+         font-weight: 100;
+         font-size: 0.9em;
+     }
+     
+     .notifications-all-items i {
+        color: red;
+        font-size: 20px;
+        padding-bottom: 5px;
+        
+     }
+     #comment {
+         color: green;
+     }
+     #user {
+         color: purple;
+     }
+
+     /* Notifictations Mentioned */
+
+     .notifications-mentioned-wrapper {
+         display: none;
+
+     }
+  
 
 
 
