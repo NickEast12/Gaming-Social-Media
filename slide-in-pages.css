@@ -1,0 +1,23 @@
+/* Accounts Page */
+.accounts-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 70px;
+    margin-top: .4em;
+    text-align: center;
+}
+.accounts-wrapper i {
+    padding-left: 20px;
+}
+.fa-steam, .fa-xbox, .fa-playstation {
+    color: white;
+}
+.fa-playstation {
+    margin-left: -.3em;
+}
+.fa-check {
+    color: green;
+}
+.fa-times {
+    color: red;
+}
