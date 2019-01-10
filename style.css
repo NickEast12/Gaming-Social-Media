@@ -50,8 +50,63 @@ a:visited {
        font-size: .8em;
        font-weight: 700;
        padding: 5px 10px;
-       margin-top: 14em;
+       display: block;
+       width: 100px;
+       margin: 1.5em auto;
+       
+       
    }
+   /* registration overlay */ 
+   .registration-wrapper {
+       background-color: black;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       transform: translateY(-100%);
+       transition: 1s ease;
+       
+   }
+   .registration-wrapper h1 {
+       color: white;
+       text-align: center;
+       margin-top: 1em;
+   }
+   #regClose {
+       font-size: 30px;
+       font-weight: 100;
+       position: absolute;
+       top: 6.5px;
+       right: 1.75em;
+   }
+   .registration-wrapper input {
+       background: none;
+       border: none;
+       color: ghostwhite;
+       display: block;
+       margin: 1em auto;
+       padding: 5px 0;
+       text-align: center;
+       border: solid white 1px;
+       font-size: .9em;
+       
+   }
+   .registration-wrapper button {
+       color: white;
+       border: solid white 2px;
+       background: none;
+       width: 100px;
+       padding: 5px 0;
+       margin: 2em 34.5%;
+   }
+   ::placeholder {
+       color: ghostwhite;
+   }
+  
+
+
+
+
    /* Login overlay */
    .login-overlay {
        position: absolute;
