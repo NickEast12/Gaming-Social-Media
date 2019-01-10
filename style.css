@@ -472,8 +472,9 @@ a:visited {
          grid-template-columns: 1fr 1fr;
          width: 100%;
          text-align: center;
-         position: fixed;
+         position: sticky;
          z-index: 100;
+         top: 75px;
        
      }
      .notification-select-all {
